@@ -76,6 +76,7 @@ int main(){
 
     using myNameSpace::print;   //It resolves the ambiguity as it instruct the compiler to use that print() which is declared in namespace myNameSpace.
     print(4,"namaste"); 
+    ::print(6,"Gopal") // this will let u call the global print() function
 
 
 
