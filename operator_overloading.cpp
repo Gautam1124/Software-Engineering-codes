@@ -8,7 +8,7 @@ class A{
     A(int i=0,string str_=""):i(i),str_(str_){
         cout<<"A::ctor is called"<<endl;
     }
-    friend ostream& operator<<(ostream &os,A& a);
+    friend ostream& operator<<(ostream &os,A& a); // We can't have a ostream operator function which is also a member function of the class because ostream is in the left of the operator and ostream will call the function not the class
     A operator+(const A&);
 };
 
